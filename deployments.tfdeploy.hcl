@@ -8,8 +8,8 @@ identity_token "aws" {
 deployment "development" {
   inputs = {
     regions        = ["ap-northeast-2"]
-    # role_arn       = "<YOUR_ROLE_ARN>"
-    # identity_token = identity_token.aws.jwt
+    role_arn       = "arn:aws:iam::467567795630:role/stacks-great-stone-hcp-stack"
+    identity_token = identity_token.aws.jwt
     default_tags = {
       Stack       = "learn-stacks-deploy-aws",
       Environment = "dev"
@@ -20,8 +20,8 @@ deployment "development" {
 deployment "production" {
   inputs = {
     regions        = ["ap-northeast-2", "ap-northeast-1"]
-    # role_arn       = "<YOUR_ROLE_ARN>"
-    # identity_token = identity_token.aws.jwt
+    role_arn       = "arn:aws:iam::467567795630:role/stacks-great-stone-hcp-stack"
+    identity_token = identity_token.aws.jwt
     default_tags = {
       Stack       = "learn-stacks-deploy-aws",
       Environment = "prod"
