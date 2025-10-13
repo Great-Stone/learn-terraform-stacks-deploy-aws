@@ -4,11 +4,11 @@
 required_providers {
   aws = {
     source  = "hashicorp/aws"
-    version = "~> 6.14.1"
+    version = "~> 6.0"
   }
   tls = {
     source  = "hashicorp/tls"
-    version = "~> 4.1.0"
+    version = "~> 4.0"
   }
 }
 
